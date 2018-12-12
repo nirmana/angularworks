@@ -1,0 +1,35 @@
+﻿<!--this is the base page of our single page application-->
+
+<!DOCTYPE html>
+<html lang="en" ng-app="tasLightApp">
+<head>
+    <meta charset="utf-8">
+
+    <!--bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <!--end bootstrap-->
+
+</head>
+<body ng-controller="appCtrl">
+    <div ui-view>
+    </div>
+    <!--application related external js modules-->
+    <script src="Packages/angular/angular.min.js"></script> <!--main angular file-->
+    <script src="Packages/angular-ui-router/release/angular-ui-router.min.js"></script> <!--angular routing helper-->
+    <script src="Packages/oclazyload/dist/ocLazyLoad.js"></script> <!--angular js lazy loading -->
+    <!--application related internal js files-->
+    <script src="Assets/js/app.js"></script> <!-- app js-->
+    <script src="Assets/js/app.main.js"></script> <!-- app's main js-->
+    <script src="Assets/js/app.constant.js"></script> <!-- app's constants js-->
+    <script src="Assets/js/app.route.js"></script> <!-- app's routes js-->
+
+
+
+    <script src="Assets/js/controllers/appCtrl.js"></script> <!-- app js-->
+
+</body>
+</html>
